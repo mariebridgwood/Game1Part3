@@ -6,6 +6,7 @@ body {
   background-color: #f8f8f8;
 }
 
+
 h1 {
   margin-bottom: 40px;
 }
@@ -104,20 +105,36 @@ h1 {
   border-radius: 50%;
 }
 
-/* New styles for navigation links */
-.nav-list li {
-  margin: 0 15px;
+/* Make the nav links horizontal */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0; /* optional: adds space above and below */
 }
 
+/* Style for each nav item */
+.nav-list li {
+  margin: 0 15px; /* Space between links */
+}
+
+/* Style for the nav links */
 .nav-list li a {
-  text-decoration: none;
-  color: blue;
-  font-size: 20px;
   font-family: "Century Gothic", sans-serif;
+  font-size: 20px;
+  color: blue;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
+/* Highlight active page */
+.nav-list li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Hover effect */
 .nav-list li a:hover {
   color: darkblue;
-  text-decoration: underline;
 }
